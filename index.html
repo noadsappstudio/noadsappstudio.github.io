@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack: Road to Casino</title>
+  <meta name="description" content="A serious blackjack coach. Master strategy, card counting, bet sizing and deviations. Know when you're ready for the casino." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #020917;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .spade {
+      font-size: 4rem;
+      line-height: 1;
+      background: linear-gradient(160deg, #fff4c2, #f59e0b, #7c2e00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 24px rgba(245,158,11,0.25));
+      margin-bottom: 1.5rem;
+    }
+
+    .kicker {
+      font-size: 0.65rem;
+      font-weight: 900;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #22d3ee;
+      opacity: 0.7;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #22d3ee;
+      margin-top: 0.25rem;
+    }
+
+    .tagline {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #f59e0b66, transparent);
+      margin: 2rem auto;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      font-size: 0.65rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #334155;
+      color: #94a3b8;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #1e3a5f, #1e40af);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      padding: 0.875rem 2rem;
+      border-radius: 14px;
+      text-decoration: none;
+      border: 1px solid rgba(99,179,237,0.2);
+      transition: opacity 0.2s;
+    }
+
+    .cta:hover { opacity: 0.85; }
+
+    .cta-note {
+      margin-top: 0.75rem;
+      font-size: 0.7rem;
+      color: #475569;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.7rem;
+      color: #334155;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .footer a {
+      color: #475569;
+      text-decoration: none;
+    }
+
+    .footer a:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spade">♠</div>
+
+    <p class="kicker">Blackjack Coach</p>
+    <h1>
+      Blackjack
+      <span>Road to Casino</span>
+    </h1>
+
+    <p class="tagline">
+      A serious training coach. Master basic strategy, card counting, bet sizing and deviations — then know exactly when you're ready for a real casino.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="badges">
+      <span class="badge">Strategy</span>
+      <span class="badge">Card Counting</span>
+      <span class="badge">Bet Sizing</span>
+      <span class="badge">Deviations</span>
+      <span class="badge">5 Languages</span>
+    </div>
+
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.noadsappstudio.blackjack" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.5c.34.19.72.24 1.09.14l11.1-11.1-2.84-2.84L3.18 23.5zm14.26-12.37L4.91.64C4.54.24 4 .09 3.5.24L14.6 11.34l2.84-.21zM20.5 10.5l-3.08-1.79-3.09 2.79 3.09 2.84L20.5 12.5c.87-.5.87-1.5 0-2zM4.27.14L15.37 11.24l2.84-2.84L6.54.09C5.63-.41 4.63-.12 4.27.14z"/></svg>
+      Google Play
+    </a>
+    <p class="cta-note">Free · Android · No ads</p>
+
+    <div class="footer">
+      <span>© 2026 NoAdsApp Studio</span>
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="mailto:noadsapp.studio@gmail.com">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
